@@ -80,7 +80,7 @@ const toggle = document.getElementById('togglePrice');
         kingPriceElement.textContent = `R$${isAnnual ? prices.king.anual.toFixed(2).replace('.', ',') : prices.king.mensal.toFixed(0)}`;
 
         periodoSpan.forEach(span => {
-            span.textContent = isAnnual ? '(Faturado anualmente)' : '/mês';
+            span.textContent = isAnnual ? '/anualmente' : '/mês';
         });
 
         if (isAnnual) {
