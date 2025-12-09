@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
@@ -13,68 +16,220 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>ParKing</title>
 </head>
+
 <body>
-    <section>
-        <button class="empresa">
-            <img src="./img/Medieval Crown.png" alt="logo">
-            <span>ParKing</span>
-        </button>
-        <button>HOME</button>
-        <button>DEMO</button>
-        <button>CLIENTES</button>
-        <button>PLANOS</button>
-        <button>FALAR COM CONSULTOR</button>
+    <!-- Header -->
+    <section class="header" id="inicio">
+        <nav>
+            <a href="#inicio" class="empresa">
+                <img src="./img/Medieval Crown.png" alt="logo">
+                <span>ParKing</span>
+            </a>
+            <a href="#home">HOME</a>
+            <a href="#demo">DEMO</a>
+            <a href="#clientes">CLIENTES</a>
+            <a href="#planos">PLANOS</a>
+            <a href="#contato" class="contaquitar">FALAR COM CONSULTOR</a>
+        </nav>
     </section>
-    <section>
-
-    </section>
-    <section>
-
-    </section>
-    <section>
-
-    </section>
-    <section>
-
-    </section>
-    <section>
-
-    </section>
-    <section>
-        <div>
-           <h1>Seus Dados Protegidos como em um <br>Cofre</h1>
-            <p>Sabemos que os dados de faturamento são o coração do <br>
-            negócio. Utilizamos criptografia de ponta a ponta e backups <br>
-            diários automáticos.</p>
+    <!-- Página principal -->
+    <section class="principal" id="home">
+        <img src="./img/Frame 2.png" alt="fundo" class="fundo">
+        <h1 class="branco">ASSUMA O TRONO DA</h1>
+        <h1 class="laranja">GESTÃO DO SEU</h1>
+        <h1>ESTACIONAMENTO</h1>
+        <p class="text-center">Controle financeiro, antifraude e automação total para grandes <br>
+            operações. O parKing Station é o fim das planilhas e o início do seu <br>
+            império.</p>
+        <div class="button">
+            <button class="botão1">Agendar demonstração real</button>
+            <button class="botão2">Ver Funcionalidades</button>
         </div>
-        <div>
+        <div class="container">
+            <div class="text-left">
+                <h2>Veja o Poder do parKing em <br>Ação</h2>
+                <p>Grandes donos de estacionamento não têm tempo para interfaces <br>
+                    confusas. Nosso Dashboard entrega o RAIO-X do seu negócio em <br>
+                    segundos.</p>
+                <span>
+                    <img src="./img/Done.svg" alt="Feito">
+                    Monitoramento de Vagas em Tempo Real
+                </span><br>
+                <span>
+                    <img src="./img/Done.svg" alt="Feito">
+                    Relatórios Financeiros
+                </span>
+            </div>
+            <img src="./img/Rectangle 1.png" alt="tela do app" class="app">
+        </div>
+    </section>
+    <!-- Parcerias -->
+    <section class="parcerias" id="clientes">
+        <h2>Quem já governa com o parKing Station</h2>
+        <div class="parceiros">
+            <img src="./img/uber-svgrepo-com 1.svg" alt="uber">
+            <img src="./img/airbnb 1.svg" alt="airbnb">
+            <img src="./img/Apple Inc.svg" alt="apple">
+            <img src="./img/Google.svg" alt="google">
+            <img src="./img/Microsoft.svg" alt="microsoft">
+        </div>
+    </section>
+    <!-- Operações -->
+    <section class="operações" id="demo">
+        <h2 class="gap">Feito para Operações de Alto Calibre.</h2>
+        <h2 class="subtitulo">Não atendemos pequenos. Nosso foco é escala, segurança e volume.</h2>
+        <div class="caixa">
+            <div class="destaques">
+                <div class="circulo">
+                    <img src="./img/Shopping Cart.svg" alt="carrinho de compras">
+                </div>
+                <h2>Shoppings & Varejo</h2>
+                <p>Gestão complexa de mensalistas, credenciados <br>e fluxo rotativo intenso sem filas na saída.</p>
+            </div>
+            <div class="destaques">
+                <div class="circulo">
+                    <img src="./img/Company.svg" alt="Redes de estacionamentos">
+                </div>
+                <h2>Redes de estacionamentos</h2>
+                <p>Centralize 10, 50 ou 100 unidades em um único <br>painel. Controle total do seu patrimônio.</p>
+            </div>
+            <div class="destaques">
+                <div class="circulo">
+                    <img src="./img/Airplane Take Off.svg" alt="Aeroportos & Eventos">
+                </div>
+                <h2>Aeroportos & Eventos</h2>
+                <p>Máxima velocidade na operação e sistemas <br>redundantes que nunca deixam o cliente <br>travado. </p>
+            </div>
+        </div>
+    </section>
+    <!-- Planos -->
+    <section class="planos" id="planos">
+        <div class="toggle-wrapper">
+            <span class="toggle-option" id="mensalText">MENSAL</span>
+            <label class="switch">
+                <input type="checkbox" id="togglePrice">
+                <span class="slider"></span>
+            </label>
+            <span class="toggle-option" id="anualText">ANUAL</span>
+            <div class="porcento">
+                <span>-20%</span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="plan-card">
+                <h3>DUQUE</h3>
+                <p class="price" id="duquePrice">R$299</p>
+                <span>/mês</span>
+                <ul class="beneficios">
+                    <li>
+                        <img src="./img/Done.svg" alt="Feito">
+                        Até 200 Vagas
+                    </li>
+                    <li>
+                        <img src="./img/Done.svg" alt="Feito">
+                        Controle de Entrada/Saída
+                    </li>
+                    <li>
+                        <img src="./img/Done.svg" alt="Feito">
+                        Relatório Básico
+                    </li>
+                </ul>
+                <button class="aperte">COMEÇAR AGORA</button>
+            </div>
+            <div class="plan-card">
+                <div class="recomendado">
+                    <h5>RECOMENDADO</h5>
+                </div>
+                <h3>REI(KING)</h3>
+                <p class="price" id="kingPrice">R$599</p>
+                <span>/mês</span>
+                <ul class="beneficios">
+                    <li>
+                        <img src="./img/Done.svg" alt="Feito">
+                        Vagas ilimitadas
+                    </li>
+                    <li>
+                        <img src="./img/Done.svg" alt="Feito">
+                        Sistema Anti-Fraude
+                    </li>
+                    <li>
+                        <img src="./img/Done.svg" alt="Feito">
+                        Integração com Cancelas
+                    </li>
+                    <li>
+                        <img src="./img/Done.svg" alt="Feito">
+                        App do gesto
+                    </li>
+                </ul>
+                <button class="quero">QUERO ESTE</button>
+            </div>
+            <div class="plan-card">
+                <h3>IMPERADOR</h3>
+                <p class="SobConsulta" id="Sob consulta">Sob consulta</p>
+                <ul class="beneficios">
+                    <li>
+                        <img src="./img/Done.svg" alt="Feito">
+                        Multi-Unidades (Redes)
+                    </li>
+                    <li>
+                        <img src="./img/Done.svg" alt="Feito">
+                        Api aberta
+                    </li>
+                    <li>
+                        <img src="./img/Done.svg" alt="Feito">
+                        Vagas ilimitadas
+                    </li>
+                </ul>
+                <button class="aperte2">Falar com consultor</button>
+            </div>
+        </div>
+    </section>
+    <!-- Dados -->
+    <section class="dados">
+        <div class="textDados">
+            <h1>Seus Dados Protegidos como em um <br>Cofre</h1>
+            <p>Sabemos que os dados de faturamento são o coração do <br>
+                negócio. Utilizamos criptografia de ponta a ponta e backups <br>
+                diários automáticos.</p>
+        </div>
+        <div class="icons">
             <img src="./img/Lock.svg" alt="cadeado">
             <img src="./img/Cloud.svg" alt="nuvem">
         </div>
     </section>
-    <section>
+    <!-- formulario/Footer -->
+    <section class="footer" id="contato">
         <div class="formulario">
             <h2>Fale com um Especialista</h2>
             <h6>Preencha abaixo. Entraremos em contato em até 2 horas.</h6>
-            <form action="">
-                <input type="text" id="name" name="name" value="Seu nome">
-                <input type="text" id="empresa" name="empresa" value="Nome da empresa">
-            </form>
-            <form action="">
-                <input type="text" id="email" name="email" value="Seu E-mail corporativo">
-            </form>
-            <select name="vagar" id="vagas">
-                <option value="" disabled selected>Quantas vagas você gerencia?</option>
-                <option value="vagas">Até 100 vagas</option>
-                <option value="vagas">100 - 500 vagas</option>
-                <option value="vagas">+500 vagas</option>
-            </select><br>
+            <div class="form-wrapper">
+                <div class="input-box">
+                    <input type="text" id="nome" placeholder="Seu nome">
+                    <img src="./img/Content.svg" class="clear-btn" data-input="nome">
+                </div>
+                <div class="input-box">
+                    <input type="text" id="empresa" placeholder="Nome da empresa">
+                    <img src="./img/Content.svg" class="clear-btn" data-input="empresa">
+                </div>
+                <div class="input-box full">
+                    <input type="text" id="outro" placeholder="Qual seu e-mail comercial ?">
+                    <img src="./img/Content.svg" class="clear-btn" data-input="outro">
+                </div>
+                <select>
+                    <option>Quantas vagas você gerencia?</option>
+                    <option value="" disabled selected>Quantas vagas você gerencia?</option>
+                    <option value="vagas">Até 100 vagas</option>
+                    <option value="vagas">100 - 500 vagas</option>
+                    <option value="vagas">+500 vagas</option>
+                </select>
+            </div>
+            <br>
             <button class="solicitar">SOLICITAR CONTATO</button>
         </div>
-        <hr>
+        <div class="linha-vertical"></div>
         <div class="contatos">
             <div class="telefone">
-                <div>
+                <div class="cinza">
                     <img src="./img/Phone.svg" alt="telefone">
                 </div>
                 <div>
@@ -83,7 +238,7 @@
                 </div>
             </div>
             <div class="email">
-                <div>
+                <div class="cinza">
                     <img src="./img/Email.svg" alt="email">
                 </div>
                 <div>
@@ -91,13 +246,13 @@
                     <span>comercial@parkingstation.com.br</span>
                 </div>
             </div>
-            <hr>
-            <div>
+            <div class="linha-horizontal"></div>
+            <div class="logo2">
                 <img src="./img/Medieval Crown.svg" alt="logo">
                 <h2>ParKing Station</h2>
             </div>
             <span>
-                © 2025 parKing Station Station Systems. 
+                © 2025 parKing Station Station Systems. <br>
                 Todos os direitos reservados.
             </span>
         </div>
@@ -105,4 +260,5 @@
 
     <script src="./script/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,101 @@
+// script do botões de "QUERO ESTE", "FALAR COM CONSULTOR", "COMEÇA AGORA"
+const botaoAgendarDemonstraçãoReal = document.querySelector('.botão1');
+
+    botaoAgendarDemonstraçãoReal.addEventListener('click', function() {
+        
+        alert('Agendado!!!');
+    });
+    
+const botaoVerFuncionalidades = document.querySelector('.botão2');
+
+    botaoVerFuncionalidades.addEventListener('click', function() {
+        
+        alert('Pague primeiro!');
+    });
+
+// script do botões de "QUERO ESTE", "FALAR COM CONSULTOR", "COMEÇA AGORA"
+const botaoQueroEste = document.querySelector('.quero');
+
+    botaoQueroEste.addEventListener('click', function() {
+        
+        alert('🎉 Parabéns! É o seu');
+    });
+
+const botaoFalarComConsultor = document.querySelector('.aperte2');
+
+    botaoFalarComConsultor.addEventListener('click', function() {
+        
+        alert('🎉 Parabéns! É o seu');
+    });
+
+const botaoComecaAgora = document.querySelector('.aperte');
+
+    botaoComecaAgora.addEventListener('click', function() {
+        
+        alert('🎉 Parabéns! É o seu');
+    });
+
+// script do botão de solicitar contato
+    const botaoSolicitar = document.querySelector('.solicitar');
+
+    botaoSolicitar.addEventListener('click', function() {
+        
+        alert('Contato solicitado!');
+    });
+
+// script do formulario 
+const buttons = document.querySelectorAll(".clear-btn");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const id = btn.getAttribute("data-input");
+    document.getElementById(id).value = "";
+    document.getElementById(id).focus();
+  });
+});
+
+// script do botão anual e mensal
+const toggle = document.getElementById('togglePrice');
+    const duquePriceElement = document.getElementById('duquePrice');
+    const kingPriceElement = document.getElementById('kingPrice');
+    const mensalText = document.getElementById('mensalText');
+    const anualText = document.getElementById('anualText');
+    const periodoSpan = document.querySelectorAll('.plan-card > span'); 
+
+    const prices = {
+        duque: {
+            mensal: 299,
+            anual: 239.20 // 299 * 0.8 (desconto de 20% anual dividido por 12 meses)
+        },
+        king: {
+            mensal: 599,
+            anual: 479.20 // 599 * 0.8
+        }
+    };
+
+    function updatePrices() {
+        const isAnnual = toggle.checked; 
+
+        duquePriceElement.textContent = `R$${isAnnual ? prices.duque.anual.toFixed(2).replace('.', ',') : prices.duque.mensal.toFixed(0)}`;
+        kingPriceElement.textContent = `R$${isAnnual ? prices.king.anual.toFixed(2).replace('.', ',') : prices.king.mensal.toFixed(0)}`;
+
+        periodoSpan.forEach(span => {
+            span.textContent = isAnnual ? '/mês (Faturado anualmente)' : '/mês';
+        });
+
+        if (isAnnual) {
+            mensalText.classList.remove('active-toggle');
+            mensalText.classList.add('inactive-toggle');
+            anualText.classList.remove('inactive-toggle');
+            anualText.classList.add('active-toggle');
+        } else {
+            mensalText.classList.remove('inactive-toggle');
+            mensalText.classList.add('active-toggle');
+            anualText.classList.remove('active-toggle');
+            anualText.classList.add('inactive-toggle');
+        }
+    }
+
+    toggle.addEventListener('change', updatePrices);
+
+    updatePrices();
