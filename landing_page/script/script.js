@@ -65,11 +65,11 @@ const toggle = document.getElementById('togglePrice');
     const prices = {
         duque: {
             mensal: 299,
-            anual: 239.20 // 299 * 0.8 (desconto de 20% anual dividido por 12 meses)
+            anual: 2870,
         },
         king: {
             mensal: 599,
-            anual: 479.20 // 599 * 0.8
+            anual: 5750,
         }
     };
 
@@ -80,7 +80,7 @@ const toggle = document.getElementById('togglePrice');
         kingPriceElement.textContent = `R$${isAnnual ? prices.king.anual.toFixed(2).replace('.', ',') : prices.king.mensal.toFixed(0)}`;
 
         periodoSpan.forEach(span => {
-            span.textContent = isAnnual ? '/mês (Faturado anualmente)' : '/mês';
+            span.textContent = isAnnual ? '(Faturado anualmente)' : '/mês';
         });
 
         if (isAnnual) {
