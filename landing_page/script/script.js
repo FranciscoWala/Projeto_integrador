@@ -18,21 +18,21 @@ const botaoQueroEste = document.querySelector('.quero');
 
     botaoQueroEste.addEventListener('click', function() {
         
-        alert('🎉 Parabéns! É o seu');
+        alert('🎉 Parabéns! Você acabou de adquirir o nosso produto');
     });
 
 const botaoFalarComConsultor = document.querySelector('.aperte2');
 
     botaoFalarComConsultor.addEventListener('click', function() {
         
-        alert('🎉 Parabéns! É o seu');
+        alert('🎉 Parabéns! Você acabou de adquirir o nosso produto');
     });
 
 const botaoComecaAgora = document.querySelector('.aperte');
 
     botaoComecaAgora.addEventListener('click', function() {
         
-        alert('🎉 Parabéns! É o seu');
+        alert('🎉 Parabéns! Você acabou de adquirir o nosso produto');
     });
 
 // script do botão de solicitar contato
@@ -40,7 +40,7 @@ const botaoComecaAgora = document.querySelector('.aperte');
 
     botaoSolicitar.addEventListener('click', function() {
         
-        alert('Contato solicitado!');
+        alert('🎉 Parabéns! Você acabou de adquirir o nosso produto');
     });
 
 // script do formulario 
