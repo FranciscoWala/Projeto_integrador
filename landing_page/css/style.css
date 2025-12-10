@@ -175,7 +175,7 @@ nav a.contactar {
 .text-left {
     color: var(--quinta-color);
     font-family: Cinzel, sans-serif;
-    margin-right: 10vw;
+    margin-right: 5vw;
 }
 
 .text-left h2 {
@@ -189,7 +189,7 @@ nav a.contactar {
 }
 
 .text-left span {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .app {
@@ -526,7 +526,7 @@ span {
 }
 
 .dados p {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--sexta-color);
 }
 
@@ -699,7 +699,7 @@ select {
 }
 
 .contatos>span:last-child {
-    font-size: 13px;
+    font-size: 14px;
     color: #FFFFFF4f;
     line-height: 22px;
 }
@@ -709,8 +709,14 @@ select {
 
     /*Header*/
 
-    .header nav a{
+    .header nav a {
         display: none;
+        background: transparent;
+    }
+    .header nav {
+        background: transparent;
+        position: sticky;
+        top:0;
     }
 
     .header .empresa {
@@ -733,13 +739,49 @@ select {
         display: flex;
         height: 70px;
         width: 70px;
-        background-color: var(--quarta-color);
+        background-color: transparent ;
         border: none;
         margin-right: 5vw;
     }
 
+    #menuButton {
+        position: relative;
+    }
+
+    .menuLateral {
+        position: absolute;
+        top: 100%;
+        right: 5px;
+        z-index: 1;
+        background: var(--quinta-color);
+        width: 180px;
+        padding: 15px 10px;
+        border-radius: 15px;
+        flex-direction: column;
+        gap: 8px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .menuLateral a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #000000;
+        font-weight: 900;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .menuLateral img {
+        height: 20px;
+    }
+
+    .buttonOrange {
+        background-color: var(--primeira-color);
+    }
+
     .headline {
-        width: 220px;
+        width: 300px;
         height: 25px;
         align-items: center;
         justify-content: center;
@@ -747,14 +789,57 @@ select {
         border-radius: 15px;
         border: 1px solid #FF7700;
         font-weight: 700;
-        font-size: 10px;
+        font-size: 14px;
         color: var(--quinta-color);
         display: flex;
     }
 
+    .principal h1 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .principal .branco {
+        margin-top: 3vh;
+    }
+
+    .fundo {
+        position: absolute;
+        top: 6%;
+        width: 100%;
+    }
+
+    .text-center {
+        line-height: 25px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .button button {
+        height: 30px;
+        width: 200px;
+        font-size:12px ;
+    }
+    .text-left h2 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .text-left p {
+        font-size: 14px;
+    }
+    .text-left span {
+        font-size: 14px;
+    }
+    .app {
+        height: 200px;
+    }
+    /* Parcerias */
+    .parceiros img{
+        height: 80px;
+        width: auto;
+        margin: 20px;
+    }               
 }
 
 /* MOBILE */
-@media (max-width: 480px) {
-    
-}
+@media (max-width: 480px) {}
