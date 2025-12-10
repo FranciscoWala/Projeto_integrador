@@ -36,6 +36,18 @@ a:active {
     transform: scale(0.95);
 }
 
+.header button {
+    display: none;
+}
+
+.header .menuLateral {
+    display: none;
+}
+
+.headline {
+    display: none;
+}
+
 /*Header*/
 
 .header {
@@ -690,4 +702,59 @@ select {
     font-size: 13px;
     color: #FFFFFF4f;
     line-height: 22px;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+    /*Header*/
+
+    .header nav a{
+        display: none;
+    }
+
+    .header .empresa {
+        display: flex;
+        font-size: 23px;
+    }
+
+    .empresa img {
+        height: 45px;
+    }
+
+    .header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--quarta-color);
+    }
+
+    .header button {
+        display: flex;
+        height: 70px;
+        width: 70px;
+        background-color: var(--quarta-color);
+        border: none;
+        margin-right: 5vw;
+    }
+
+    .headline {
+        width: 220px;
+        height: 25px;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff770036;
+        border-radius: 15px;
+        border: 1px solid #FF7700;
+        font-weight: 700;
+        font-size: 10px;
+        color: var(--quinta-color);
+        display: flex;
+    }
+
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    
 }
