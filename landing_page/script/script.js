@@ -1,4 +1,15 @@
-// script do botões de "QUERO ESTE", "FALAR COM CONSULTOR", "COMEÇA AGORA"
+// script do menu lateral da versão responsiva
+const menuButton = document.getElementById("menuButton");
+const menu = document.getElementById("menu")
+menuButton.addEventListener("click", () =>{
+    if (menu.style.display === "none"){
+        menu.style.display = "block";
+    }else{
+        menu.style.display = "none";
+    }
+});
+
+// script do botões da página principal
 const botaoAgendarDemonstraçãoReal = document.querySelector('.botão1');
 
     botaoAgendarDemonstraçãoReal.addEventListener('click', function() {
