@@ -7,6 +7,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
+
 public class App {
 
     public String placaDoVeiculo; //declarando variáveis públicas
@@ -37,53 +38,10 @@ public class App {
             System.out.println("Erro: " + e.getMessage());
         }
     }
-    public String buscarESair(String placaBuscada) {
-        try {
-            Scanner arquivo = new Scanner(new File("estacionados.csv"));
 
-            while (arquivo.hasNextLine()) {
-                String linha = arquivo.nextLine();
-                String[] dados = linha.split(",");
-
-                if (dados[0].trim().equalsIgnoreCase(placaBuscada.trim())) {
-                    LocalDateTime horaEntrada = LocalDateTime.parse(dados[3].trim());
-                    LocalDateTime horaSaida = LocalDateTime.now();
-
-                    long minutos = Duration.between(horaEntrada, horaSaida).toMinutes();
-                    double preco = calcularPreco(minutos);
-
-                    // Salvar no histórico e remover de estacionados
-                    salvarNoHistorico(dados, horaSaida, minutos, preco);
-                    removerDoEstacionados(placaBuscada);
-
-                    arquivo.close();
-
-                    return String.format(
-                            "═══════════════════════════\n" +
-                                    "   SAÍDA REGISTRADA\n" +
-                                    "═══════════════════════════\n\n" +
-                                    "Placa: %s\n" +
-                                    "Modelo: %s\n" +
-                                    "Proprietário: %s\n\n" +
-                                    "Tempo: %d minutos\n" +
-                                    "Valor: R$ %.2f\n\n" +
-                                    "═══════════════════════════",
-                            dados[0].trim(), dados[1].trim(), dados[2].trim(), minutos, preco
-                    );
-                }
-            }
-            arquivo.close();
-            return "Placa não encontrada nos registros!";
-
-        } catch (Exception e) {
-            return "Erro ao buscar: " + e.getMessage();
-        }
-    }
-
-    public void registrarSaida() {
+    public String registrarSaida(String placaBuscada) {
         Scanner leitor = new Scanner(System.in);
-        System.out.print("Digite a placa do veículo: ");
-        String placaBuscada = leitor.nextLine().trim();
+        System.out.println("Digite a placa do veículo: ");
 
         try {
             Scanner arquivo = new Scanner(new File("br/senai/jandira/sp/projetoIntegrador/estacionamento.csv"));
@@ -102,18 +60,21 @@ public class App {
                     long minutos = Duration.between(horaEntrada, horaSaida).toMinutes();
                     double preco = calcularPreco(minutos);
 
-                    System.out.println("\n=== SAÍDA REGISTRADA ===");
-                    System.out.println("Placa: " + dados[0]);
-                    System.out.println("Modelo: " + dados[1]);
-                    System.out.println("Tempo: " + minutos + " minutos");
-                    System.out.println("Valor: R$ " + String.format("%.2f", preco));
-
                     salvarNoHistorico(dados, horaSaida, minutos, preco);
                     removerDoEstacionados(placaBuscada);
 
-                    break;
+                    arquivo.close();
+
+                    return
+
+                                    "Placa: " + dados[0] + "\n" +
+                                    "Modelo: " + dados[1] + "\n" +
+                                    "Tempo: " + minutos + " minutos\n" +
+                                    "Valor: R$ " + String.format("%.2f", preco);
                 }
             }
+
+            arquivo.close();
 
             if (!encontrou) {
                 System.out.println("Placa não encontrada!");
@@ -125,6 +86,7 @@ public class App {
             System.out.println("Erro: " + e.getMessage());
             e.printStackTrace();
         }
+        return placaBuscada;
     }
 
     public void salvarNoHistorico(String[] dadosVeiculo, LocalDateTime horaSaida, long minutos, double preco) {
@@ -190,4 +152,5 @@ public class App {
 
         return valor;
     }
+
 }

@@ -62,7 +62,7 @@ public class TelaSaidaVeiculo {
                 txtResultado.setStyle("-fx-control-inner-background: #2A2D68; -fx-text-fill: #FF0000; -fx-font-size: 14;");
             } else {
                 // Chama o método que faz TUDO: busca, calcula, salva histórico, remove
-                String resultado = app.buscarESair(placa);
+                String resultado = app.registrarSaida(placa);
                 txtResultado.setText(resultado);
                 txtResultado.setStyle("-fx-control-inner-background: #2A2D68; -fx-text-fill: white; -fx-font-size: 13; -fx-font-family: 'Courier New';");
 
