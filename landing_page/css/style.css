@@ -7,6 +7,19 @@
     --sexta-color: #d9d9d9;
 }
 
+/*CORREÇÃO DE ACESSIBILIDADE: Adicionado para ocultar visualmente os labels obrigatórios no formulário, mantendo-os para leitores de tela. */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 /*Design para Desktop*/
 
 /*Estilizações globais*/
@@ -54,6 +67,7 @@ a:active {
     position: sticky;
     top: 0;
     z-index: 999;
+    width: 100%;
 }
 
 nav {
@@ -63,6 +77,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 4vw;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 nav a {
@@ -116,6 +133,7 @@ nav a.contactar {
     position: absolute;
     top: 50%;
     left: 50%;
+    object-fit: cover;
     width: 95%;
     height: auto;
     transform: translate(-50%, -50%);
@@ -272,7 +290,8 @@ nav a.contactar {
     border: 1px solid var(--primeira-color);
 }
 
-.destaques h2 {
+.destaques h3 {
+    font-weight: 500; 
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -405,6 +424,11 @@ input:checked+.slider:before {
     z-index: 1;
 }
 
+.tag-recomendado { 
+    font-size: initial; 
+    font-weight: initial;
+}
+
 .plan-card h3 {
     color: var(--quinta-color);
     opacity: .70;
@@ -524,7 +548,7 @@ span {
     margin-right: 5vw;
 }
 
-.dados h1 {
+.dados h2 { 
     margin-bottom: 20px;
     font-size: 30px;
 }
@@ -542,7 +566,7 @@ span {
 
 /*Formulario*/
 
-.footer {
+.footer { 
     margin-top: 30px;
     height: 600px;
     background-color: #5A5C8050;
@@ -550,7 +574,6 @@ span {
     align-items: center;
     justify-content: center;
     gap: 65px;
-    /*espaço entre a barra do meio*/
 }
 
 .footer h2 {
@@ -559,10 +582,11 @@ span {
     margin-bottom: 20px;
 }
 
-.footer h6 {
+.formulario .subtitulo-contato {
     color: #FFFFFF4f;
     font-family: Cinzel, sans-serif;
     margin-bottom: 35px;
+    font-size: initial; 
 }
 
 .formulario {
@@ -661,7 +685,7 @@ select {
     align-items: center;
 }
 
-.contatos h2 {
+.contatos h3 { 
     font-family: Inter, sans-serif;
     font-size: 20px;
     font-weight: 800;
@@ -695,7 +719,7 @@ select {
     width: 40px;
 }
 
-.logo2 h2 {
+.logo2 h3 {
     font-family: Cinzel, sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -877,7 +901,7 @@ select {
         height: 33vh;
     }
 
-    .destaques h2 {
+    .destaques h3 { 
         font-size: 20px;
         padding: 2px;
     }
@@ -888,6 +912,10 @@ select {
     }
 
     /*Planos*/
+
+    .planos {
+        background-color: var(--quarta-color);
+    }
 
     .cards {
         flex-direction: column;
@@ -904,6 +932,7 @@ select {
     }
 
     .footer {
+        background-color: var(--quarta-color);
         flex-direction: column;
         height: auto;
     }
@@ -917,4 +946,198 @@ select {
 }
 
 /* MOBILE */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+    /*Header*/
+
+    .header {
+        height: 60px;
+    }
+
+    .header .empresa {
+        font-size: 20px;
+    }
+
+    .empresa img {
+        height: 35px;
+    }
+
+    .header button {
+        height: 50px;
+        width: 50px;
+    }
+
+    .menuLateral {
+        top: 100%;
+        right: 0px;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    /*Página principal*/
+
+    .principal {
+        margin-top: 15px;
+    }
+
+    .headline {
+        width: 200px;
+        font-size: 10px;
+    }
+
+    .fundo {
+        object-fit: cover;
+        height: 60vh;
+    }
+
+    .principal h1 {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .text-center {
+        line-height: 20px;
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button button {
+        height: 30px;
+        width: 200px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .button a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: 500;
+        width: 200px;
+        height: 30px;
+        margin-bottom: 0px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .app {
+        margin-top: 20px;
+        height: 200px;
+    }
+
+    /* Parcerias */
+
+    .parcerias {
+        height: auto;
+    }
+
+    .parcerias h2 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    /*Operações*/
+
+    .operações h2 {
+        font-size: 18px;
+    }
+
+    .caixa {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .destaques {
+        width: 65vw;
+    }
+
+    .destaques h3 { 
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .destaques p {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    /*Planos*/
+
+    .planos {
+        background-color: var(--quarta-color);
+    }
+
+    .toggle-wrapper {
+        font-size: 18px;
+    }
+
+    .cards {
+        gap: 50px;
+    }
+
+    .plan-card {
+        width: 300px;
+    }
+
+    /*Dados*/
+
+    .dados {
+        height: auto;
+    }
+
+    .textDados {
+        padding: 30px 0px 30px 0px;
+    }
+
+    .dados h2 { 
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .dados p {
+        font-size: 14px;
+        color: var(--sexta-color);
+    }
+
+    .icons img {
+        height: 40px;
+        margin: 20px;
+    }
+
+    /*Formulario*/
+
+    .footer {
+        background-color: var(--quarta-color);
+    }
+
+    .formulario {
+        width: 350px;
+    }
+
+    .solicitar {
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .input-box {
+        position: relative;
+        display: block;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    select {
+        margin-top: 5vh;
+    }
+
+}
