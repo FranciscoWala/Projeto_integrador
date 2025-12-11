@@ -226,7 +226,7 @@ nav a.contactar {
 
 .operações {
     font-family: Inter, sans-serif;
-    height: 480px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,7 +240,7 @@ nav a.contactar {
 
 .operações h2 {
     font-weight: 500;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .subtitulo {
@@ -713,6 +713,14 @@ select {
 
     /*Header*/
 
+    .header {
+        height: 80px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--quarta-color);
+    }
+
     .header nav a {
         display: none;
         background: transparent;
@@ -731,13 +739,6 @@ select {
 
     .empresa img {
         height: 45px;
-    }
-
-    .header {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        background-color: var(--quarta-color);
     }
 
     .header button {
@@ -787,6 +788,10 @@ select {
     }
 
     /*Página principal*/
+
+    .principal {
+        margin-top: 30px;
+    }
 
     .botão1 {
         font-size: 14px;
@@ -860,7 +865,7 @@ select {
     /* Parcerias */
 
     .parceiros img {
-        height: 80px;
+        height: 10vh;
         width: auto;
         margin: 20px;
     }
@@ -868,7 +873,8 @@ select {
     /*Operações*/
 
     .destaques {
-        width: 210px;
+        width: 25vw;
+        height: 33vh;
     }
 
     .destaques h2 {
@@ -885,6 +891,10 @@ select {
 
     .cards {
         flex-direction: column;
+    }
+
+    .plan-card:nth-child(2) {
+        top: 0px;
     }
 
     /*Formulario*/
