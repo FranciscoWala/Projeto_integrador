@@ -291,7 +291,7 @@ nav a.contactar {
 }
 
 .destaques h3 {
-    font-weight: 500; 
+    font-weight: 500;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -424,8 +424,8 @@ input:checked+.slider:before {
     z-index: 1;
 }
 
-.tag-recomendado { 
-    font-size: initial; 
+.tag-recomendado {
+    font-size: initial;
     font-weight: initial;
 }
 
@@ -548,7 +548,7 @@ span {
     margin-right: 5vw;
 }
 
-.dados h2 { 
+.dados h2 {
     margin-bottom: 20px;
     font-size: 30px;
 }
@@ -566,7 +566,7 @@ span {
 
 /*Formulario*/
 
-.footer { 
+.footer {
     margin-top: 30px;
     height: 600px;
     background-color: #5A5C8050;
@@ -586,7 +586,7 @@ span {
     color: #FFFFFF4f;
     font-family: Cinzel, sans-serif;
     margin-bottom: 35px;
-    font-size: initial; 
+    font-size: initial;
 }
 
 .formulario {
@@ -685,7 +685,7 @@ select {
     align-items: center;
 }
 
-.contatos h3 { 
+.contatos h3 {
     font-family: Inter, sans-serif;
     font-size: 20px;
     font-weight: 800;
@@ -901,7 +901,7 @@ select {
         height: 33vh;
     }
 
-    .destaques h3 { 
+    .destaques h3 {
         font-size: 20px;
         padding: 2px;
     }
@@ -1046,6 +1046,15 @@ select {
         margin-top: 20px;
     }
 
+    .parceiros {
+        padding: 20px;
+    }
+
+    .parcerias .icontoggle {
+        width: 120px;
+        margin-left: 10px;
+    }
+
     /*Operações*/
 
     .operações h2 {
@@ -1061,7 +1070,7 @@ select {
         width: 65vw;
     }
 
-    .destaques h3 { 
+    .destaques h3 {
         font-size: 14px;
         padding: 5px;
     }
@@ -1099,7 +1108,7 @@ select {
         padding: 30px 0px 30px 0px;
     }
 
-    .dados h2 { 
+    .dados h2 {
         margin-bottom: 15px;
         font-size: 20px;
     }
