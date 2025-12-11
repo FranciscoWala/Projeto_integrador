@@ -12,29 +12,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>ParKing</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <section class="header" id="inicio">
-        <nav>
-            <a href="#inicio" class="empresa">
-                <img src="./img/Medieval Crown.png" alt="logo">
-                <span>ParKing</span>
-            </a>
-            <a href="#home">HOME</a>
-            <a href="#demo">DEMO</a>
-            <a href="#clientes">CLIENTES</a>
-            <a href="#planos">PLANOS</a>
-            <a href="#contato" class="contactar">FALAR COM CONSULTOR</a>
-        </nav>
-        <button id="menuButton">
-            <img src="./img/menu hamburgue.svg" alt="menu hamburgue">
-        </button>
-        <div id="menu" class="menuLateral">
+    <header class="header" id="inicio">
+            <meta name="description" content="Landing-page com o foco em vender o meu software de gestão de estacionamento">
+            <nav>
+                <a href="#inicio" class="empresa">
+                    <img src="./img/Medieval Crown.png" alt="logo">
+                    <span>ParKing</span>
+                </a>
+                <a href="#home">HOME</a>
+                <a href="#demo">DEMO</a>
+                <a href="#clientes">CLIENTES</a>
+                <a href="#planos">PLANOS</a>
+                <a href="#contato" class="contactar">FALAR COM CONSULTOR</a>
+            </nav>
+            <button id="menuButton">
+                <img src="./img/menu hamburgue.svg" alt="menu hamburgue">
+            </button>
+            <div id="menu" class="menuLateral">
                 <a href="#home">
                     Home
                     <img src="./img/seta.png" alt="seta">
@@ -55,234 +56,236 @@
                     Consultoria
                     <img src="./img/seta.png" alt="seta">
                 </a>
-        </div>
-    </section>
-    <!-- Página principal -->
-    <section class="principal" id="home">
-        <img src="./img/Frame 2.png" alt="fundo" class="fundo">
-        <div class="headline">SOFTWARE DE ELITE PARA GESTORES</div>
-        <h1 class="branco">ASSUMA O TRONO DA</h1>
-        <h1 class="laranja">GESTÃO DO SEU</h1>
-        <h1>ESTACIONAMENTO</h1>
-        <p class="text-center">Controle financeiro, antifraude e automação total para grandes <br>
-            operações. O parKing Station é o fim das planilhas e o início do seu <br>
-            império.</p>
-        <div class="button">
-            <a class="botão1" href="#contato">Agendar demonstração real</a>
-            <button class="botão2">Ver Funcionalidades</button>
-        </div>
-        <div class="container">
-            <div class="text-left">
-                <h2>Veja o Poder do parKing em <br>Ação</h2>
-                <p>Grandes donos de estacionamento não têm tempo para interfaces <br>
-                    confusas. Nosso Dashboard entrega o RAIO-X do seu negócio em <br>
-                    segundos.</p>
+            </div>
+    </header>
+
+    <main>
+        <section class="principal" id="home">
+            <img src="./img/fundo.png" alt="fundo" class="fundo" fetchpriority="high" width="X" height="Y"> 
+            
+            <div class="headline">SOFTWARE DE ELITE PARA GESTORES</div>
+            <h1 class="branco">ASSUMA O TRONO DA</h1>
+            <h1 class="laranja">GESTÃO DO SEU</h1>
+            <h1>ESTACIONAMENTO</h1>
+            <p class="text-center">Controle financeiro, antifraude e automação total para grandes <br>
+                operações. O parKing Station é o fim das planilhas e o início do seu <br>
+                império.</p>
+            <div class="button">
+                <a class="botão1" href="#contato">Agendar demonstração real</a>
+                <button class="botão2">Ver Funcionalidades</button>
+            </div>
+            <div class="container">
+                <div class="text-left">
+                    <h2>Veja o Poder do parKing em <br>Ação</h2>
+                    <p>Grandes donos de estacionamento não têm tempo para interfaces <br>
+                        confusas. Nosso Dashboard entrega o RAIO-X do seu negócio em <br>
+                        segundos.</p>
+                    <span>
+                        <img src="./img/Done.svg" alt="Feito">
+                        Monitoramento de Vagas em Tempo Real
+                    </span><br>
+                    <span>
+                        <img src="./img/Done.svg" alt="Feito">
+                        Relatórios Financeiros
+                    </span>
+                </div>
+                <img src="./img/Rectangle 1.png" alt="tela do app" class="app" width="X" height="Y">
+            </div>
+        </section>
+        <section class="parcerias" id="clientes">
+            <h2>Quem já governa com o parKing Station</h2>
+            <div class="parceiros">
+                <img src="./img/uber-svgrepo-com 1.svg" alt="uber" width="X" height="Y">
+                <img src="./img/airbnb 1.svg" alt="airbnb" width="X" height="Y">
+                <img src="./img/Apple Inc.svg" alt="apple" width="X" height="Y">
+                <img src="./img/Google.svg" alt="google" width="X" height="Y">
+                <img src="./img/Microsoft.svg" alt="microsoft" width="X" height="Y">
+            </div>
+        </section>
+        <section class="operações" id="demo">
+            <h2 class="gap">Feito para Operações de Alto Calibre.</h2>
+            <h2 class="subtitulo">Nosso foco é escala, segurança e volume.</h2>
+            <div class="caixa">
+                <div class="destaques">
+                    <div class="circulo">
+                        <img src="./img/Shopping Cart.svg" alt="carrinho de compras" width="X" height="Y">
+                    </div>
+                    <h3>Shoppings & Varejo</h3>
+                    <p>Gestão complexa de mensalistas, credenciados <br>e fluxo rotativo intenso sem filas na saída.</p>
+                </div>
+                <div class="destaques">
+                    <div class="circulo">
+                        <img src="./img/Company.svg" alt="Redes de estacionamentos" width="X" height="Y">
+                    </div>
+                    <h3>Redes de estacionamentos</h3>
+                    <p>Centralize 10, 50 ou 100 unidades em um único <br>painel. Controle total do seu patrimônio.</p>
+                </div>
+                <div class="destaques">
+                    <div class="circulo">
+                        <img src="./img/Airplane Take Off.svg" alt="Aeroportos & Eventos" width="X" height="Y">
+                    </div>
+                    <h3>Aeroportos & Eventos</h3>
+                    <p>Máxima velocidade na operação e sistemas <br>redundantes que nunca deixam o cliente <br>travado. </p>
+                </div>
+            </div>
+        </section>
+        <section class="planos" id="planos">
+            <div class="toggle-wrapper">
+                <span class="toggle-option" id="mensalText">MENSAL</span>
+                <label class="switch" for="togglePrice"> 
+                    <input type="checkbox" id="togglePrice">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-option" id="anualText">ANUAL</span>
+                <div class="porcento">
+                    <span>-20%</span>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="plan-card">
+                    <h3>DUQUE</h3>
+                    <p class="price" id="duquePrice">R$299</p>
+                    <span>/mês</span>
+                    <ul class="beneficios">
+                        <li>
+                            <img src="./img/Done.svg" alt="Feito" width="X" height="Y">
+                            Até 200 Vagas
+                        </li>
+                        <li>
+                            <img src="./img/Done.svg" alt="Feito" width="X" height="Y">
+                            Controle de Entrada/Saída
+                        </li>
+                        <li>
+                            <img src="./img/Done.svg" alt="Feito" width="X" height="Y">
+                            Relatório Básico
+                        </li>
+                    </ul>
+                    <button class="aperte">COMEÇAR AGORA</button>
+                </div>
+                <div class="plan-card" id="#recomendado">
+                    <div class="recomendado">
+                        <span class="tag-recomendado">RECOMENDADO</span>
+                    </div>
+                    <h3>REI(KING)</h3>
+                    <p class="price" id="kingPrice">R$599</p>
+                    <span>/mês</span>
+                    <ul class="beneficios">
+                         <li>
+                            <img src="./img/Done.svg" alt="Feito" width="X" height="Y">
+                            Vagas ilimitadas
+                        </li>
+                        <li>
+                            <img src="./img/Done.svg" alt="Feito" width="X" height="Y">
+                            Sistema Anti-Fraude
+                        </li>
+                        <li>
+                            <img src="./img/Done.svg" alt="Feito" width="X" height="Y">
+                            Integração com Cancelas
+                        </li>
+                        <li>
+                            <img src="./img/Done.svg" alt="Feito" width="X" height="Y">
+                            App do gesto
+                        </li>
+                    </ul>
+                    <button class="quero">QUERO ESTE</button>
+                </div>
+                <div class="plan-card">
+                    <h3>IMPERADOR</h3>
+                    <p class="SobConsulta" id="Sob consulta">Sob consulta</p>
+                    <ul class="beneficios">
+                         <li>
+                            <img src="./img/Done.svg" alt="Feito" width="X" height="Y">
+                            Multi-Unidades (Redes)
+                        </li>
+                        <li>
+                            <img src="./img/Done.svg" alt="Feito" width="X" height="Y">
+                            Api aberta
+                        </li>
+                        <li>
+                            <img src="./img/Done.svg" alt="Feito" width="X" height="Y">
+                            Vagas ilimitadas
+                        </li>
+                    </ul>
+                    <button class="aperte2">Falar com consultor</button>
+                </div>
+            </div>
+        </section>
+        <section class="dados">
+            <div class="textDados">
+                <h2>Seus Dados Protegidos como em um <br>Cofre</h2>
+                <p>Sabemos que os dados de faturamento são o coração do <br>
+                    negócio. Utilizamos criptografia de ponta a ponta e backups <br>
+                    diários automáticos.</p>
+            </div>
+            <div class="icons">
+                <img src="./img/Lock.svg" alt="cadeado" width="X" height="Y">
+                <img src="./img/Cloud.svg" alt="nuvem" width="X" height="Y">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contato"> 
+            <div class="formulario">
+                <h2>Fale com um Especialista</h2>
+                <p class="subtitulo-contato">Preencha abaixo. Entraremos em contato em até 2 horas.</p>
+                <div class="form-wrapper">
+                    <div class="input-box">
+                        <label for="nome" class="sr-only">Seu nome</label> 
+                        <input type="text" id="nome" placeholder="Seu nome">
+                        <img src="./img/Content.svg" alt="limpar campo" class="clear-btn" data-input="nome" width="X" height="Y">
+                    </div>
+                    <div class="input-box">
+                        <label for="empresa" class="sr-only">Nome da empresa</label>
+                        <input type="text" id="empresa" placeholder="Nome da empresa">
+                        <img src="./img/Content.svg" alt="limpar campo" class="clear-btn" data-input="empresa" width="X" height="Y">
+                    </div>
+                    <div class="input-box full">
+                        <label for="outro" class="sr-only">Seu e-mail comercial</label>
+                        <input type="text" id="outro" placeholder="Qual seu e-mail comercial ?">
+                        <img src="./img/Content.svg" alt="limpar campo" class="clear-btn" data-input="outro" width="X" height="Y">
+                    </div>
+                    <label for="campo-vagas" class="sr-only">Quantas vagas você gerencia?</label>
+                    <select id="campo-vagas">
+                        <option value="" disabled selected>Quantas vagas você gerencia?</option>
+                        <option value="vagas">Até 100 vagas</option>
+                        <option value="vagas">100 - 500 vagas</option>
+                        <option value="vagas">+500 vagas</option>
+                    </select>
+                </div>
+                <br>
+                <button class="solicitar">SOLICITAR CONTATO</button>
+            </div>
+            <div class="linha-vertical"></div>
+            <div class="contatos">
+                <div class="telefone">
+                    <div class="cinza">
+                        <img src="./img/Phone.svg" alt="telefone" width="X" height="Y">
+                    </div>
+                    <div>
+                        <h3>Ligue para nós</h3>
+                        <span>0800 123 4576 <br>Seg-Sex, 8h às 18h</span>
+                    </div>
+                </div>
+                <div class="email">
+                    <div class="cinza">
+                        <img src="./img/Email.svg" alt="email" width="X" height="Y">
+                    </div>
+                    <div>
+                        <h3>E-mail</h3>
+                        <span>comercial@parkingstation.com.br</span>
+                    </div>
+                </div>
+                <div class="linha-horizontal"></div>
+                <div class="logo2">
+                    <img src="./img/Medieval Crown.svg" alt="logo" width="X" height="Y">
+                    <h3>ParKing Station</h3> 
+                </div>
                 <span>
-                    <img src="./img/Done.svg" alt="Feito">
-                    Monitoramento de Vagas em Tempo Real
-                </span><br>
-                <span>
-                    <img src="./img/Done.svg" alt="Feito">
-                    Relatórios Financeiros
+                    © 2025 parKing Station Station Systems. <br>
+                    Todos os direitos reservados.
                 </span>
             </div>
-            <img src="./img/Rectangle 1.png" alt="tela do app" class="app">
-        </div>
-    </section>
-    <!-- Parcerias -->
-    <section class="parcerias" id="clientes">
-        <h2>Quem já governa com o parKing Station</h2>
-        <div class="parceiros">
-            <img src="./img/uber-svgrepo-com 1.svg" alt="uber">
-            <img src="./img/airbnb 1.svg" alt="airbnb">
-            <img src="./img/Apple Inc.svg" alt="apple">
-            <img src="./img/Google.svg" alt="google">
-            <img src="./img/Microsoft.svg" alt="microsoft">
-        </div>
-    </section>
-    <!-- Operações -->
-    <section class="operações" id="demo">
-        <h2 class="gap">Feito para Operações de Alto Calibre.</h2>
-        <h2 class="subtitulo">Não atendemos pequenos. Nosso foco é escala, segurança e volume.</h2>
-        <div class="caixa">
-            <div class="destaques">
-                <div class="circulo">
-                    <img src="./img/Shopping Cart.svg" alt="carrinho de compras">
-                </div>
-                <h2>Shoppings & Varejo</h2>
-                <p>Gestão complexa de mensalistas, credenciados <br>e fluxo rotativo intenso sem filas na saída.</p>
-            </div>
-            <div class="destaques">
-                <div class="circulo">
-                    <img src="./img/Company.svg" alt="Redes de estacionamentos">
-                </div>
-                <h2>Redes de estacionamentos</h2>
-                <p>Centralize 10, 50 ou 100 unidades em um único <br>painel. Controle total do seu patrimônio.</p>
-            </div>
-            <div class="destaques">
-                <div class="circulo">
-                    <img src="./img/Airplane Take Off.svg" alt="Aeroportos & Eventos">
-                </div>
-                <h2>Aeroportos & Eventos</h2>
-                <p>Máxima velocidade na operação e sistemas <br>redundantes que nunca deixam o cliente <br>travado. </p>
-            </div>
-        </div>
-    </section>
-    <!-- Planos -->
-    <section class="planos" id="planos">
-        <div class="toggle-wrapper">
-            <span class="toggle-option" id="mensalText">MENSAL</span>
-            <label class="switch">
-                <input type="checkbox" id="togglePrice">
-                <span class="slider"></span>
-            </label>
-            <span class="toggle-option" id="anualText">ANUAL</span>
-            <div class="porcento">
-                <span>-20%</span>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="plan-card">
-                <h3>DUQUE</h3>
-                <p class="price" id="duquePrice">R$299</p>
-                <span>/mês</span>
-                <ul class="beneficios">
-                    <li>
-                        <img src="./img/Done.svg" alt="Feito">
-                        Até 200 Vagas
-                    </li>
-                    <li>
-                        <img src="./img/Done.svg" alt="Feito">
-                        Controle de Entrada/Saída
-                    </li>
-                    <li>
-                        <img src="./img/Done.svg" alt="Feito">
-                        Relatório Básico
-                    </li>
-                </ul>
-                <button class="aperte">COMEÇAR AGORA</button>
-            </div>
-            <div class="plan-card" id="#recomendado">
-                <div class="recomendado">
-                    <h5>RECOMENDADO</h5>
-                </div>
-                <h3>REI(KING)</h3>
-                <p class="price" id="kingPrice">R$599</p>
-                <span>/mês</span>
-                <ul class="beneficios">
-                    <li>
-                        <img src="./img/Done.svg" alt="Feito">
-                        Vagas ilimitadas
-                    </li>
-                    <li>
-                        <img src="./img/Done.svg" alt="Feito">
-                        Sistema Anti-Fraude
-                    </li>
-                    <li>
-                        <img src="./img/Done.svg" alt="Feito">
-                        Integração com Cancelas
-                    </li>
-                    <li>
-                        <img src="./img/Done.svg" alt="Feito">
-                        App do gesto
-                    </li>
-                </ul>
-                <button class="quero">QUERO ESTE</button>
-            </div>
-            <div class="plan-card">
-                <h3>IMPERADOR</h3>
-                <p class="SobConsulta" id="Sob consulta">Sob consulta</p>
-                <ul class="beneficios">
-                    <li>
-                        <img src="./img/Done.svg" alt="Feito">
-                        Multi-Unidades (Redes)
-                    </li>
-                    <li>
-                        <img src="./img/Done.svg" alt="Feito">
-                        Api aberta
-                    </li>
-                    <li>
-                        <img src="./img/Done.svg" alt="Feito">
-                        Vagas ilimitadas
-                    </li>
-                </ul>
-                <button class="aperte2">Falar com consultor</button>
-            </div>
-        </div>
-    </section>
-    <!-- Dados -->
-    <section class="dados">
-        <div class="textDados">
-            <h1>Seus Dados Protegidos como em um <br>Cofre</h1>
-            <p>Sabemos que os dados de faturamento são o coração do <br>
-                negócio. Utilizamos criptografia de ponta a ponta e backups <br>
-                diários automáticos.</p>
-        </div>
-        <div class="icons">
-            <img src="./img/Lock.svg" alt="cadeado">
-            <img src="./img/Cloud.svg" alt="nuvem">
-        </div>
-    </section>
-    <!-- formulario/Footer -->
-    <section class="footer" id="contato">
-        <div class="formulario">
-            <h2>Fale com um Especialista</h2>
-            <h6>Preencha abaixo. Entraremos em contato em até 2 horas.</h6>
-            <div class="form-wrapper">
-                <div class="input-box">
-                    <input type="text" id="nome" placeholder="Seu nome">
-                    <img src="./img/Content.svg" class="clear-btn" data-input="nome">
-                </div>
-                <div class="input-box">
-                    <input type="text" id="empresa" placeholder="Nome da empresa">
-                    <img src="./img/Content.svg" class="clear-btn" data-input="empresa">
-                </div>
-                <div class="input-box full">
-                    <input type="text" id="outro" placeholder="Qual seu e-mail comercial ?">
-                    <img src="./img/Content.svg" class="clear-btn" data-input="outro">
-                </div>
-                <select>
-                    <option>Quantas vagas você gerencia?</option>
-                    <option value="" disabled selected>Quantas vagas você gerencia?</option>
-                    <option value="vagas">Até 100 vagas</option>
-                    <option value="vagas">100 - 500 vagas</option>
-                    <option value="vagas">+500 vagas</option>
-                </select>
-            </div>
-            <br>
-            <button class="solicitar">SOLICITAR CONTATO</button>
-        </div>
-        <div class="linha-vertical"></div>
-        <div class="contatos">
-            <div class="telefone">
-                <div class="cinza">
-                    <img src="./img/Phone.svg" alt="telefone">
-                </div>
-                <div>
-                    <h2>Ligue para nós</h2>
-                    <span>0800 123 4576 <br>Seg-Sex, 8h às 18h</span>
-                </div>
-            </div>
-            <div class="email">
-                <div class="cinza">
-                    <img src="./img/Email.svg" alt="email">
-                </div>
-                <div>
-                    <h2>E-mail</h2>
-                    <span>comercial@parkingstation.com.br</span>
-                </div>
-            </div>
-            <div class="linha-horizontal"></div>
-            <div class="logo2">
-                <img src="./img/Medieval Crown.svg" alt="logo">
-                <h2>ParKing Station</h2>
-            </div>
-            <span>
-                © 2025 parKing Station Station Systems. <br>
-                Todos os direitos reservados.
-            </span>
-        </div>
-    </section>
+    </footer>
 
     <script src="./script/script.js"></script>
 </body>
