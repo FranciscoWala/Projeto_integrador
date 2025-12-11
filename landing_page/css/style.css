@@ -144,7 +144,8 @@ nav a.contactar {
     opacity: 20%;
 }
 
-.button button {
+.button button,
+.botão1 {
     margin: 30px;
     height: 50px;
     width: 300px;
@@ -152,9 +153,11 @@ nav a.contactar {
 }
 
 .botão1 {
+    font-size: 14px;
     font-family: Cinzel, sans-serif;
-    background-color: var(--primeira-color);
+    background-color: var(--secundaria-color);
     border: none;
+    padding: 16px;
 }
 
 .botão2 {
@@ -223,7 +226,7 @@ nav a.contactar {
 
 .operações {
     font-family: Inter, sans-serif;
-    height: 480px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,7 +240,7 @@ nav a.contactar {
 
 .operações h2 {
     font-weight: 500;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .subtitulo {
@@ -266,6 +269,7 @@ nav a.contactar {
 .destaques:hover {
     background-color: #40426fda;
     transform: scale(1.05);
+    border: 1px solid var(--primeira-color);
 }
 
 .destaques h2 {
@@ -709,14 +713,23 @@ select {
 
     /*Header*/
 
+    .header {
+        height: 80px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--quarta-color);
+    }
+
     .header nav a {
         display: none;
         background: transparent;
     }
+
     .header nav {
         background: transparent;
         position: sticky;
-        top:0;
+        top: 0;
     }
 
     .header .empresa {
@@ -728,18 +741,11 @@ select {
         height: 45px;
     }
 
-    .header {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        background-color: var(--quarta-color);
-    }
-
     .header button {
         display: flex;
         height: 70px;
         width: 70px;
-        background-color: transparent ;
+        background-color: transparent;
         border: none;
         margin-right: 5vw;
     }
@@ -749,6 +755,7 @@ select {
     }
 
     .menuLateral {
+        font-family: Inter, sans-serif;
         position: absolute;
         top: 100%;
         right: 5px;
@@ -767,7 +774,7 @@ select {
         align-items: center;
         justify-content: space-between;
         color: #000000;
-        font-weight: 900;
+        font-weight: 700;
         padding: 10px;
         border-radius: 10px;
     }
@@ -780,7 +787,19 @@ select {
         background-color: var(--primeira-color);
     }
 
+    /*Página principal*/
+
+    .principal {
+        margin-top: 30px;
+    }
+
+    .botão1 {
+        font-size: 14px;
+        padding: 5px;
+    }
+
     .headline {
+        font-family: Inter, sans-serif;
         width: 300px;
         height: 25px;
         align-items: center;
@@ -795,7 +814,7 @@ select {
     }
 
     .principal h1 {
-        font-size: 20px;
+        font-size: 27px;
         font-weight: 700;
     }
 
@@ -818,27 +837,83 @@ select {
     .button button {
         height: 30px;
         width: 200px;
-        font-size:12px ;
+        font-size: 12px;
     }
+
+    .button a {
+        height: 40px;
+        background-color: var(--secundaria-color);
+    }
+
     .text-left h2 {
         font-size: 18px;
         font-weight: 500;
     }
+
     .text-left p {
         font-size: 14px;
     }
+
     .text-left span {
         font-size: 14px;
     }
+
     .app {
         height: 200px;
     }
+
     /* Parcerias */
-    .parceiros img{
-        height: 80px;
+
+    .parceiros img {
+        height: 10vh;
         width: auto;
         margin: 20px;
-    }               
+    }
+
+    /*Operações*/
+
+    .destaques {
+        width: 25vw;
+        height: 33vh;
+    }
+
+    .destaques h2 {
+        font-size: 20px;
+        padding: 2px;
+    }
+
+    .destaques p {
+        font-size: 14px;
+        padding: 2px;
+    }
+
+    /*Planos*/
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .plan-card:nth-child(2) {
+        top: 0px;
+    }
+
+    /*Formulario*/
+
+    .formulario {
+        height: 500px;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .linha-vertical {
+        height: 2px;
+        width: 300px;
+        opacity: 50%;
+    }
+
 }
 
 /* MOBILE */
