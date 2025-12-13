@@ -233,7 +233,7 @@ nav a.contactar {
 .parcerias h2 {
     font-weight: 500;
     color: var(--quinta-color);
-    opacity: 38%;
+    opacity: 50%;
 }
 
 .parceiros img {
@@ -383,7 +383,7 @@ input:checked+.slider:before {
 }
 
 .porcento {
-    background-color: #d9d9d92c;
+    background-color: #d9d9d97e;
     border-radius: 20px;
     color: #ff9100;
     font-size: 18px;
@@ -401,7 +401,7 @@ input:checked+.slider:before {
 }
 
 .porcento {
-    background-color: #d9d9d92c;
+    background-color: #d9d9d97e;
     border-radius: 20px;
     color: var(--primeira-color);
 }
