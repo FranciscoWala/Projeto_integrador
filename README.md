@@ -57,8 +57,8 @@ A seção de documentação inclui artefatos cruciais para o desenvolvimento, co
 
 | Fidelidade | Descrição |
 | :--- | :--- |
-| **Baixa Fidelidade** | Foco na estrutura e fluxo básico da página. !<img src="./img/baixaFidelidade.png" height="600px"> |
-| **Alta Fidelidade** | Design detalhado com cores, tipografia e elementos visuais finais, representando o produto pronto. ![Landing Page Responsiva](./img/altaFidelidade.png)|
+| **Baixa Fidelidade** | Foco na estrutura e fluxo básico da página. <br> <img src="./img/baixaFidelidade.png" height="600px"> |
+| **Alta Fidelidade** | Design detalhado com cores, tipografia e elementos visuais finais, representando o produto pronto. <br> ![Landing Page Responsiva](./img/altaFidelidade.png)|
 
 ### 4. Deploy e Configuração de DNS
 
@@ -89,4 +89,5 @@ Para rodar a Landing Page localmente, siga os passos abaixo:
     cd Projeto_Integrador/landing-page/
     ```
 3.  **Abra o arquivo `index.html`** no seu navegador de preferência.
+
 
