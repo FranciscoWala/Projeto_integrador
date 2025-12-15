@@ -46,7 +46,7 @@ landing-page/
 O coração do projeto, este *software* é a ferramenta que o operador utiliza para gerenciar o fluxo de veículos no estacionamento. Ele registra entradas, saídas e mantém um inventário dos veículos estacionados em tempo real.
 
 **Prévia da Interface do Software:** <br>
-![Interface do Software Java](./img/Captura%20de%20Tela%202025-12-15%20às%2015.53.02.png)
+<img src="./img/Captura de Tela 2025-12-15 às 15.53.02.png" height="600px">
 
 ### Documentação e Protótipos
 
