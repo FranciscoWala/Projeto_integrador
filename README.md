@@ -40,7 +40,7 @@ landing-page/
 **Prévia da Landing Page:** <br>
 ![Landing Page Desktop](./img/landing-page.png)
 
-### 2. Software de Gestão (Java)
+### Software de Gestão (Java)
 (Desenvolvedor: **Enzo Crepaldi**)
 
 O coração do projeto, este *software* é a ferramenta que o operador utiliza para gerenciar o fluxo de veículos no estacionamento. Ele registra entradas, saídas e mantém um inventário dos veículos estacionados em tempo real.
@@ -48,9 +48,9 @@ O coração do projeto, este *software* é a ferramenta que o operador utiliza p
 **Prévia da Interface do Software:** <br>
 ![Interface do Software Java](./img/software.png)
 
-### 3. Documentação e Protótipos
+### Documentação e Protótipos
 
-A seção de documentação inclui artefatos cruciais para o desenvolvimento, como os protótipos de baixa e alta fidelidade e os registros de *dailys* (reuniões diárias).
+A seção de documentação inclui artefatos cruciais para o desenvolvimento, como os protótipos de baixa e alta fidelidade e os registros de *dailys* (reuniões diárias), onde discutimos o que faríamos, o que fizemos, o que estamos fazendo e se precisávamos de ajuda."
 
 * **Comentário do TechLead (Francisco Wala):**
     > "Para chegar no protótipo final, foi necessário passar pelo esboço (Excalidraw), logo em seguida foi necessário realizar mudanças e chegamos no atual."
@@ -60,9 +60,13 @@ A seção de documentação inclui artefatos cruciais para o desenvolvimento, co
 | **Baixa Fidelidade** | Foco na estrutura e fluxo básico da página. <br> <img src="./img/baixaFidelidade.png" height="600px"> |
 | **Alta Fidelidade** | Design detalhado com cores, tipografia e elementos visuais finais, representando o produto pronto. <br> ![Landing Page Responsiva](./img/altaFidelidade.png)|
 
-### 4. Deploy e Configuração de DNS
+### Deploy e Configuração de DNS
 
 A Landing Page foi hospedada em um servidor *web* e configuramos um DNS para que o domínio do projeto aponte corretamente para o servidor.
+
+### Arquitetura de Redes 
+
+Através do Packet Tracer criamos um rede pequena para hospedar uma versão mais leve da nossa Landing page.
 
 ---
 
@@ -89,5 +93,6 @@ Para rodar a Landing Page localmente, siga os passos abaixo:
     cd Projeto_Integrador/landing-page/
     ```
 3.  **Abra o arquivo `index.html`** no seu navegador de preferência.
+
 
 
