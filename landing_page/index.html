@@ -12,57 +12,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>ParKing</title>
 </head>
 
 <body>
+    <!-- header -->
     <header class="header" id="inicio">
-            <meta name="description" content="Landing-page com o foco em vender o meu software de gestão de estacionamento">
-            <nav>
-                <a href="#inicio" class="empresa">
-                    <img src="./img/Medieval Crown.png" alt="logo">
-                    <span>ParKing</span>
-                </a>
-                <a href="#home">HOME</a>
-                <a href="#demo">DEMO</a>
-                <a href="#clientes">CLIENTES</a>
-                <a href="#planos">PLANOS</a>
-                <a href="#contato" class="contactar">FALAR COM CONSULTOR</a>
-            </nav>
-            <button id="menuButton">
-                <img src="./img/menu hamburgue.svg" alt="menu hamburgue">
-            </button>
-            <div id="menu" class="menuLateral">
-                <a href="#home">
-                    Home
-                    <img src="./img/seta.png" alt="seta">
-                </a>
-                <a href="#demo">
-                    Demo
-                    <img src="./img/seta.png" alt="seta">
-                </a>
-                <a href="#clientes">
-                    Clientes
-                    <img src="./img/seta.png" alt="seta">
-                </a>
-                <a href="#planos">
-                    Planos
-                    <img src="./img/seta.png" alt="seta">
-                </a>
-                <a href="#contato" class="buttonOrange">
-                    Consultoria
-                    <img src="./img/seta.png" alt="seta">
-                </a>
-            </div>
+        <meta name="description" content="Landing-page com o foco em vender o meu software de gestão de estacionamento">
+        <nav>
+            <a href="#inicio" class="empresa">
+                <img src="./img/Medieval Crown.png" alt="logo">
+                <span>ParKing</span>
+            </a>
+            <a href="#home">HOME</a>
+            <a href="#demo">DEMO</a>
+            <a href="#clientes">CLIENTES</a>
+            <a href="#planos">PLANOS</a>
+            <a href="#contato" class="contactar">FALAR COM CONSULTOR</a>
+        </nav>
+        <button id="menuButton">
+            <img src="./img/menu hamburgue.svg" alt="menu hamburgue">
+        </button>
+        <div id="menu" class="menuLateral">
+            <a href="#home">
+                Home
+                <img src="./img/seta.png" alt="seta">
+            </a>
+            <a href="#demo">
+                Demo
+                <img src="./img/seta.png" alt="seta">
+            </a>
+            <a href="#clientes">
+                Clientes
+                <img src="./img/seta.png" alt="seta">
+            </a>
+            <a href="#planos">
+                Planos
+                <img src="./img/seta.png" alt="seta">
+            </a>
+            <a href="#contato" class="buttonOrange">
+                Consultoria
+                <img src="./img/seta.png" alt="seta">
+            </a>
+        </div>
     </header>
 
     <main>
+        <!-- Principal -->
         <section class="principal" id="home">
-            <img src="./img/fundo.png" alt="fundo" class="fundo" fetchpriority="high" width="X" height="Y"> 
-            
+            <img src="./img/fundo.png" alt="fundo" class="fundo" fetchpriority="high" width="X" height="Y">
             <div class="headline">SOFTWARE DE ELITE PARA GESTORES</div>
             <h1 class="branco">ASSUMA O TRONO DA</h1>
             <h1 class="laranja">GESTÃO DO SEU</h1>
@@ -92,6 +93,7 @@
                 <img src="./img/Rectangle 1.png" alt="tela do app" class="app" width="X" height="Y">
             </div>
         </section>
+        <!-- Parcerias -->
         <section class="parcerias" id="clientes">
             <h2>Quem já governa com o parKing Station</h2>
             <div class="parceiros">
@@ -102,6 +104,7 @@
                 <img src="./img/Microsoft.svg" alt="microsoft" width="X" height="Y" class="icontoggle">
             </div>
         </section>
+        <!-- Operações -->
         <section class="operações" id="demo">
             <h2 class="gap">Feito para Operações de Alto Calibre.</h2>
             <h2 class="subtitulo">Nosso foco é escala, segurança e volume.</h2>
@@ -125,15 +128,17 @@
                         <img src="./img/Airplane Take Off.svg" alt="Aeroportos & Eventos" width="X" height="Y">
                     </div>
                     <h3>Aeroportos & Eventos</h3>
-                    <p>Máxima velocidade na operação e sistemas <br>redundantes que nunca deixam o cliente <br>travado. </p>
+                    <p>Máxima velocidade na operação e sistemas <br>redundantes que nunca deixam o cliente <br>travado.
+                    </p>
                 </div>
             </div>
         </section>
+        <!-- Planos -->
         <section class="planos" id="planos">
             <div class="toggle-wrapper">
                 <span class="toggle-option" id="mensalText">MENSAL</span>
-                <label class="switch" for="togglePrice"> 
-                    <input type="checkbox" id="togglePrice">
+                <label class="switch" for="togglePrice">
+                    <input type="checkbox" id="togglePrice" aria-label="Mudar preço">
                     <span class="slider"></span>
                 </label>
                 <span class="toggle-option" id="anualText">ANUAL</span>
@@ -170,7 +175,7 @@
                     <p class="price" id="kingPrice">R$599</p>
                     <span>/mês</span>
                     <ul class="beneficios">
-                         <li>
+                        <li>
                             <img src="./img/Done.svg" alt="Feito" width="X" height="Y">
                             Vagas ilimitadas
                         </li>
@@ -193,7 +198,7 @@
                     <h3>IMPERADOR</h3>
                     <p class="SobConsulta" id="Sob consulta">Sob consulta</p>
                     <ul class="beneficios">
-                         <li>
+                        <li>
                             <img src="./img/Done.svg" alt="Feito" width="X" height="Y">
                             Multi-Unidades (Redes)
                         </li>
@@ -210,6 +215,7 @@
                 </div>
             </div>
         </section>
+        <!-- Dados -->
         <section class="dados">
             <div class="textDados">
                 <h2>Seus Dados Protegidos como em um <br>Cofre</h2>
@@ -223,71 +229,74 @@
             </div>
         </section>
     </main>
-
-    <footer class="footer" id="contato"> 
-            <div class="formulario">
-                <h2>Fale com um Especialista</h2>
-                <p class="subtitulo-contato">Preencha abaixo. Entraremos em contato em até 2 horas.</p>
-                <div class="form-wrapper">
-                    <div class="input-box">
-                        <label for="nome" class="sr-only">Seu nome</label> 
-                        <input type="text" id="nome" placeholder="Seu nome">
-                        <img src="./img/Content.svg" alt="limpar campo" class="clear-btn" data-input="nome" width="X" height="Y">
-                    </div>
-                    <div class="input-box">
-                        <label for="empresa" class="sr-only">Nome da empresa</label>
-                        <input type="text" id="empresa" placeholder="Nome da empresa">
-                        <img src="./img/Content.svg" alt="limpar campo" class="clear-btn" data-input="empresa" width="X" height="Y">
-                    </div>
-                    <div class="input-box full">
-                        <label for="outro" class="sr-only">Seu e-mail comercial</label>
-                        <input type="text" id="outro" placeholder="Qual seu e-mail comercial ?">
-                        <img src="./img/Content.svg" alt="limpar campo" class="clear-btn" data-input="outro" width="X" height="Y">
-                    </div>
-                    <label for="campo-vagas" class="sr-only">Quantas vagas você gerencia?</label>
-                    <select id="campo-vagas">
-                        <option value="" disabled selected>Quantas vagas você gerencia?</option>
-                        <option value="vagas">Até 100 vagas</option>
-                        <option value="vagas">100 - 500 vagas</option>
-                        <option value="vagas">+500 vagas</option>
-                    </select>
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="formulario">
+            <h2>Fale com um Especialista</h2>
+            <p class="subtitulo-contato">Preencha abaixo. Entraremos em contato em até 2 horas.</p>
+            <div class="form-wrapper">
+                <div class="input-box">
+                    <label for="nome" class="sr-only">Seu nome</label>
+                    <input type="text" id="nome" placeholder="Seu nome">
+                    <img src="./img/Content.svg" alt="limpar campo" class="clear-btn" data-input="nome" width="X"
+                        height="Y">
                 </div>
-                <br>
-                <button class="solicitar">SOLICITAR CONTATO</button>
+                <div class="input-box">
+                    <label for="empresa" class="sr-only">Nome da empresa</label>
+                    <input type="text" id="empresa" placeholder="Nome da empresa">
+                    <img src="./img/Content.svg" alt="limpar campo" class="clear-btn" data-input="empresa" width="X"
+                        height="Y">
+                </div>
+                <div class="input-box full">
+                    <label for="outro" class="sr-only">Seu e-mail comercial</label>
+                    <input type="text" id="outro" placeholder="Qual seu e-mail comercial ?">
+                    <img src="./img/Content.svg" alt="limpar campo" class="clear-btn" data-input="outro" width="X"
+                        height="Y">
+                </div>
+                <label for="campo-vagas" class="sr-only">Quantas vagas você gerencia?</label>
+                <select id="campo-vagas">
+                    <option value="" disabled selected>Quantas vagas você gerencia?</option>
+                    <option value="vagas">Até 100 vagas</option>
+                    <option value="vagas">100 - 500 vagas</option>
+                    <option value="vagas">+500 vagas</option>
+                </select>
             </div>
-            <div class="linha-vertical"></div>
-            <div class="contatos">
-                <div class="telefone">
-                    <div class="cinza">
-                        <img src="./img/Phone.svg" alt="telefone" width="X" height="Y">
-                    </div>
-                    <div>
-                        <h3>Ligue para nós</h3>
-                        <span>0800 123 4576 <br>Seg-Sex, 8h às 18h</span>
-                    </div>
+            <br>
+            <button class="solicitar">SOLICITAR CONTATO</button>
+        </div>
+        <div class="linha-vertical"></div>
+        <div class="contatos">
+            <div class="telefone">
+                <div class="cinza">
+                    <img src="./img/Phone.svg" alt="telefone" width="X" height="Y">
                 </div>
-                <div class="email">
-                    <div class="cinza">
-                        <img src="./img/Email.svg" alt="email" width="X" height="Y">
-                    </div>
-                    <div>
-                        <h3>E-mail</h3>
-                        <span>comercial@parkingstation.com.br</span>
-                    </div>
+                <div>
+                    <h3>Ligue para nós</h3>
+                    <span>0800 123 4576 <br>Seg-Sex, 8h às 18h</span>
                 </div>
-                <div class="linha-horizontal"></div>
-                <div class="logo2">
-                    <img src="./img/Medieval Crown.svg" alt="logo" width="X" height="Y">
-                    <h3>ParKing Station</h3> 
-                </div>
-                <span>
-                    © 2025 parKing Station Station Systems. <br>
-                    Todos os direitos reservados.
-                </span>
             </div>
+            <div class="email">
+                <div class="cinza">
+                    <img src="./img/Email.svg" alt="email" width="X" height="Y">
+                </div>
+                <div>
+                    <h3>E-mail</h3>
+                    <span>comercial@parkingstation.com.br</span>
+                </div>
+            </div>
+            <div class="linha-horizontal"></div>
+            <div class="logo2">
+                <img src="./img/Medieval Crown.svg" alt="logo" width="X" height="Y">
+                <h3>ParKing Station</h3>
+            </div>
+            <span>
+                © 2025 parKing Station Station Systems. <br>
+                Todos os direitos reservados.
+            </span>
+        </div>
     </footer>
 
-    <script src="./script/script.js"></script>
+    <script src="./script/script.js" defer></script>
 </body>
 
 </html>
