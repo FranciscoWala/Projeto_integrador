@@ -46,11 +46,14 @@ landing-page/
 O coração do projeto, este *software* é a ferramenta que o operador utiliza para gerenciar o fluxo de veículos no estacionamento. Ele registra entradas, saídas e mantém um inventário dos veículos estacionados em tempo real.
 
 **Prévia da Interface do Software:** <br>
-![Interface do Software Java](./img/software.png)
+![Interface do Software Java](./img/Captura%20de%20Tela%202025-12-15%20às%2015.53.02.png)
 
 ### Documentação e Protótipos
 
 A seção de documentação inclui artefatos cruciais para o desenvolvimento, como os protótipos de baixa e alta fidelidade e os registros de *dailys* (reuniões diárias), onde discutimos o que faríamos, o que fizemos, o que estamos fazendo e se precisávamos de ajuda."
+
+Link do Figma:
+https://www.figma.com/design/nTArp7NtgJTnhXeGeRdgDP/parKing-Station?node-id=0-1&t=JZf0jEvDNfyiCJC1-1
 
 * **Comentário do TechLead (Francisco Wala):**
     > "Para chegar no protótipo final, foi necessário passar pelo esboço (Excalidraw), logo em seguida foi necessário realizar mudanças e chegamos no atual."
