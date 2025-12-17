@@ -52,6 +52,12 @@ O coração do projeto, este *software* é a ferramenta que o operador utiliza p
 
 A seção de documentação inclui artefatos cruciais para o desenvolvimento, como os protótipos de baixa e alta fidelidade e os registros de *dailys* (reuniões diárias), onde discutimos o que faríamos, o que fizemos, o que estamos fazendo e se precisávamos de ajuda."
 
+link dos Protótipos:
+https://www.figma.com/design/nTArp7NtgJTnhXeGeRdgDP/parKing-Station?node-id=0-1&t=JZf0jEvDNfyiCJC1-1
+
+link dos Casos de uso:
+https://lucid.app/lucidchart/bb3d9305-e14f-411a-ad68-0466b334eabc/edit?viewport_loc=-1053%2C-392%2C2166%2C891%2C0_0&invitationId=inv_0268c5ab-11a8-4bf4-bd04-6030c7201e22
+
 * **Comentário do TechLead (Francisco Wala):**
     > "Para chegar no protótipo final, foi necessário passar pelo esboço (Excalidraw), logo em seguida foi necessário realizar mudanças e chegamos no atual."
 
@@ -93,4 +99,5 @@ Para rodar a Landing Page localmente, siga os passos abaixo:
     cd Projeto_Integrador/landing-page/
     ```
 3.  **Abra o arquivo `index.html`** no seu navegador de preferência.
+
 
